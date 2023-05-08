@@ -2,8 +2,15 @@ import javax.swing.*;
 
 public class LoginForm {
     private JPanel rootPanel;
-    private JButton button1;
-    private JButton button2;
+    private JTextField usernameLoginTextField;
+    private JPasswordField loginPasswordField;
+    private JTextField nameCreateAccountTextField;
+    private JTextField usernameCreateAccountTextField;
+    private JTextField passwordCreateAccountTextField;
+    private JTextField textField1;
+    private JButton createAccountButton;
+    private JButton loginButton;
+    private JLabel arsTitleLabel;
 
     public static void main(String[] args) {
         try {
