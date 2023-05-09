@@ -1,0 +1,184 @@
+Index: src/BookingForm.form
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/BookingForm.form b/src/BookingForm.form
+new file mode 100644
+--- /dev/null	(date 1683582833357)
++++ b/src/BookingForm.form	(date 1683582833357)
+@@ -0,0 +1,46 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="BookingForm">
++  <grid id="27dc6" binding="rootPanel" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
++    <margin top="0" left="0" bottom="0" right="0"/>
++    <constraints>
++      <xy x="20" y="20" width="500" height="400"/>
++    </constraints>
++    <properties/>
++    <border type="none"/>
++    <children>
++      <component id="8bdbb" class="javax.swing.JLabel">
++        <constraints>
++          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
++        </constraints>
++        <properties>
++          <font size="36"/>
++          <text value="Flights"/>
++        </properties>
++      </component>
++      <hspacer id="90fb3">
++        <constraints>
++          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
++        </constraints>
++      </hspacer>
++      <component id="169a6" class="javax.swing.JTable" binding="table1" default-binding="true">
++        <constraints>
++          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
++            <preferred-size width="150" height="50"/>
++          </grid>
++        </constraints>
++        <properties/>
++      </component>
++      <grid id="eab3e" layout-manager="GridBagLayout">
++        <constraints>
++          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="true">
++            <preferred-size width="200" height="100"/>
++            <maximum-size width="200" height="100"/>
++          </grid>
++        </constraints>
++        <properties/>
++        <border type="etched" title="Selected Flight"/>
++        <children/>
++      </grid>
++    </children>
++  </grid>
++</form>
+Index: src/BookingForm.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/BookingForm.java b/src/BookingForm.java
+new file mode 100644
+--- /dev/null	(date 1683572047289)
++++ b/src/BookingForm.java	(date 1683572047289)
+@@ -0,0 +1,14 @@
++import javax.swing.*;
++
++public class BookingForm {
++    private JTable table1;
++    private JPanel rootPanel;
++
++    public static void main(String[] args) {
++        JFrame frame = new JFrame("BookingForm");
++        frame.setContentPane(new BookingForm().rootPanel);
++        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
++        frame.pack();
++        frame.setVisible(true);
++    }
++}
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"d1434287-1e6a-4dea-b2b0-e06a3893ccbc\" name=\"Changes\" comment=\"Set up basics of login form\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/LoginForm.form\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/LoginForm.form\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/LoginForm.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/LoginForm.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2P4a1SDMz9hoy9QAkn3N1GdrRyO\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"settings.editor.selected.configurable\": \"preferences.lookFeel\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"LoginForm\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"LoginForm\" />\r\n      <module name=\"ARS\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Application.LoginForm\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"d1434287-1e6a-4dea-b2b0-e06a3893ccbc\" name=\"Changes\" comment=\"\" />\r\n      <created>1682718593947</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1682718593947</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Set up basics of login form\">\r\n      <created>1683328421002</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1683328421002</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"2\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Set up basics of login form\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Set up basics of login form\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision ef7a04b89abbaf0dd8e1c72e855152dc4e5de38b)
++++ b/.idea/workspace.xml	(date 1683653653007)
+@@ -4,10 +4,10 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="d1434287-1e6a-4dea-b2b0-e06a3893ccbc" name="Changes" comment="Set up basics of login form">
++    <list default="true" id="d1434287-1e6a-4dea-b2b0-e06a3893ccbc" name="Changes" comment="Finished Login Form GUI design">
++      <change afterPath="$PROJECT_DIR$/src/BookingForm.form" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/BookingForm.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/LoginForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginForm.form" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/LoginForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginForm.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -23,6 +23,19 @@
+   </component>
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++  </component>
++  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
++  "lastFilter": {
++    "state": "OPEN"
++  }
++}]]></component>
++  <component name="GithubPullRequestsUISettings">
++    <option name="selectedUrlAndAccountId">
++      <UrlAndAccount>
++        <option name="accountId" value="2b1ba4b2-af92-429c-a5b8-429b39ffb0e6" />
++        <option name="url" value="https://github.com/fvonkriegenbergh/ARS.git" />
++      </UrlAndAccount>
++    </option>
+   </component>
+   <component name="MarkdownSettingsMigration">
+     <option name="stateVersion" value="1" />
+@@ -33,14 +46,21 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "settings.editor.selected.configurable": "preferences.lookFeel"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+   }
+-}]]></component>
+-  <component name="RunManager">
++}</component>
++  <component name="RunManager" selected="Application.BookingForm">
++    <configuration name="BookingForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="BookingForm" />
++      <module name="ARS" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
+     <configuration name="LoginForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+       <option name="MAIN_CLASS_NAME" value="LoginForm" />
+       <module name="ARS" />
+@@ -50,6 +70,7 @@
+     </configuration>
+     <recent_temporary>
+       <list>
++        <item itemvalue="Application.BookingForm" />
+         <item itemvalue="Application.LoginForm" />
+       </list>
+     </recent_temporary>
+@@ -70,11 +91,19 @@
+       <option name="project" value="LOCAL" />
+       <updated>1683328421002</updated>
+     </task>
+-    <option name="localTasksCounter" value="2" />
++    <task id="LOCAL-00002" summary="Finished Login Form GUI design">
++      <created>1683509399577</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1683509399577</updated>
++    </task>
++    <option name="localTasksCounter" value="3" />
+     <servers />
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="Set up basics of login form" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Set up basics of login form" />
++    <MESSAGE value="Finished Login Form GUI design" />
++    <option name="LAST_COMMIT_MESSAGE" value="Finished Login Form GUI design" />
+   </component>
+ </project>
+\ No newline at end of file
