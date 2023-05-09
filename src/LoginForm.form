@@ -161,7 +161,7 @@
           <gridbag weightx="0.0" weighty="0.0"/>
         </constraints>
         <properties>
-          <font size="36"/>
+          <font size="36" style="1"/>
           <text value="ARS"/>
         </properties>
       </component>
