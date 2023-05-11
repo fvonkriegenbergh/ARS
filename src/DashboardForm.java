@@ -92,19 +92,31 @@ public class DashboardForm extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e){
         if(e.getSource() == bookFlightBtn){
+
             // open available flights page
+            BookingForm newBooking = new BookingForm(this.currentUser) ;
+            this.dispose() ;
         }
         if(e.getSource() == trackFlightBtn){
+
             // open user flights page
+            FlightsForm newFlights = new FlightsForm(this.currentUser) ;
         }
         if(e.getSource() == helpBtn){
+
             // open help page
+
         }
         if(e.getSource() == logOutBtn){
+
             // log out user
+            this.dispose() ;
+            JOptionPane.showMessageDialog(this, "Logged out successful!");
         }
         if(e.getSource() == customerSupportBtn){
+
             // open customer service live chat box
+
         }
 
     }

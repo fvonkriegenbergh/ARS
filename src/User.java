@@ -94,4 +94,10 @@ public class User {
     public void bookFlight(Flight newFlight){
         this.userFlights.add(newFlight)  ;
     }
+
+
+    public String toString(){
+        return this.userID + "\n" + this.fullName + "\n" + this.userPassword + "\n" + this.userID
+                + "\n" + this.email + "\n" + this.flierMiles ;
+    }
 }
