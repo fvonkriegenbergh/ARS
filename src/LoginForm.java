@@ -8,8 +8,8 @@ public class LoginForm extends JFrame implements ActionListener {
     private JPasswordField loginPasswordField;
     private JTextField nameCreateAccountTextField;
     private JTextField usernameCreateAccountTextField;
-    private JTextField passwordCreateAccountTextField;
-    private JTextField cnfmPassCreateAccountTextField;
+    private JTextField passwordCreateAccountPasswordField;
+    private JTextField cnfmPassCreateAccountPasswordField;
     private JButton createAccountButton;
     private JButton loginButton;
     private JLabel arsTitleLabel;
@@ -48,8 +48,8 @@ public class LoginForm extends JFrame implements ActionListener {
             // addUser method with text from create account text fields data
             addUser(this.nameCreateAccountTextField.getText(),
                     this.usernameCreateAccountTextField.getText(),
-                    this.passwordCreateAccountTextField.getText(),
-                    this.cnfmPassCreateAccountTextField.getText()) ;
+                    this.passwordCreateAccountPasswordField.getText(),
+                    this.cnfmPassCreateAccountPasswordField.getText()) ;
         }
     }
 

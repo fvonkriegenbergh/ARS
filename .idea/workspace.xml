@@ -6,14 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d1434287-1e6a-4dea-b2b0-e06a3893ccbc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BookingForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BookingForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DashboardForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/DashboardForm.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DashboardForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DashboardForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FlightsForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlightsForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LoginForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginForm.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LoginForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +40,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="BookingForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BookingForm" />
       <module name="ARS" />
@@ -68,8 +62,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="ARS" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.BookingForm" />
         <item itemvalue="Application.FlightsForm" />
         <item itemvalue="Application.LoginForm" />
