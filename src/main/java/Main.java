@@ -12,7 +12,7 @@ public class Main {
         //Replace my "<username>" and "<password>" with your own unique ones
 
         MongoClient client = MongoClients.create(
-                "mongodb+srv://Naver001:Cnavera12345@cluster0.uwuwakt.mongodb.net/?retryWrites=true&w=majority");
+                "mongodb+srv://<username>:<password>@cluster0.uwuwakt.mongodb.net/?retryWrites=true&w=majority");
 
         MongoDatabase db = client.getDatabase("AirlineResSystem");
 
