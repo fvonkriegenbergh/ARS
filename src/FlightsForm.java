@@ -33,6 +33,16 @@ public class FlightsForm extends JFrame implements ActionListener {
     // default constructor
     public FlightsForm(User currUser){
 
+        // set title of frame
+        this.setTitle("Your Flights") ;
+
+        // set UI display look consistent with login page
+        try {
+            UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel"); //Windows Look and feel
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException e) {
+            System.out.println(e.toString());
+        }
+
         this.currUser = currUser ;
 
         this.setContentPane(this.rootPanel);

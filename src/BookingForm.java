@@ -34,6 +34,15 @@ public class BookingForm extends JFrame implements ActionListener, TableModelLis
 
     // default constructor
     public BookingForm(User currUser){
+        // set title of frame
+        this.setTitle("Flights") ;
+
+        // set UI display look consistent with login page
+        try {
+            UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel"); //Windows Look and feel
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException e) {
+            System.out.println(e.toString());
+        }
 
         this.currUser = currUser ;
         backButton.addActionListener(this);
