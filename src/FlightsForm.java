@@ -6,6 +6,8 @@ public class FlightsForm extends JFrame implements ActionListener {
 
 
     private JPanel rootPanel;
+    private JTable flightsTable;
+    private JButton bookButton;
     private JLabel flightNumLabel;
     private JLabel departDestLabel;
     private JLabel arriveDestLabel;
@@ -14,8 +16,6 @@ public class FlightsForm extends JFrame implements ActionListener {
     private JLabel baggageLabel;
     private JLabel seatNumLabel;
     private JLabel ticketNumLabel;
-    private JButton bookButton;
-    private JTable flightsTable;
     private JButton customerSupportBtn;
     private JButton backButton;
     private User currUser ;
