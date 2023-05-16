@@ -8,6 +8,8 @@ import java.awt.event.MouseListener;
 public class FlightsForm extends JFrame implements ActionListener, MouseListener {
 
     private JPanel rootPanel;
+    private JTable flightsTable;
+    private JButton bookButton;
     private JLabel flightNumLabel;
     private JLabel departDestLabel;
     private JLabel arriveDestLabel;
@@ -16,8 +18,6 @@ public class FlightsForm extends JFrame implements ActionListener, MouseListener
     private JLabel baggageLabel;
     private JLabel seatNumLabel;
     private JLabel ticketNumLabel;
-    private JButton bookButton;
-    private JTable flightsTable ;
     private JButton customerSupportBtn;
     private JButton backButton;
     private User currUser ;
@@ -30,16 +30,34 @@ public class FlightsForm extends JFrame implements ActionListener, MouseListener
         this.setSize(600, 300);
         this.setLocationRelativeTo(null) ;
         this.setVisible(true);
+
+        this.backButton.addActionListener(this);
+        this.customerSupportBtn.addActionListener(this);
     }
 
     // default constructor
+    // set FlightForm current user to currUser takes from parameter
     public FlightsForm(User currUser){
 
-        // set FlightForm current user to currUser takes from parameter
+
+
+        // set title of frame
+        this.setTitle("Your Flights") ;
+
+        // set UI display look consistent with login page
+        try {
+            UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel"); //Windows Look and feel
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException e) {
+            System.out.println(e.toString());
+        }
+
         // add action listener to backButton to allow user to go back to Dashboard
         // call setYourFlights method to add in data to Flights table
         this.currUser = currUser ;
+        this.customerSupportBtn.addActionListener(this);
         this.backButton.addActionListener(this) ;
+
+        // populate table with currUser flights
         setYourFlights(this.currUser.getFlightData()) ;
 
         // add mouse listener to check which flight is clicked
@@ -58,12 +76,16 @@ public class FlightsForm extends JFrame implements ActionListener, MouseListener
         if(e.getSource() == backButton){
 
             // open the dashboard frame with the current User object passed back
-            DashboardForm newDash = new DashboardForm(currUser) ;
+
+            System.out.println("support");
+            DashboardForm prevDash = new DashboardForm(currUser) ;
             this.dispose() ;
         }
         if(e.getSource() == customerSupportBtn){
 
             // customer support live chat method
+            SupportChatbotForm initChat = new SupportChatbotForm() ;
+            System.out.println("support");
         }
         if(e.getSource() == bookButton){
 
@@ -81,6 +103,9 @@ public class FlightsForm extends JFrame implements ActionListener, MouseListener
         this.flightsTable.setModel(jt.getModel());
     }
 
+    //
+    // override mouslistener methods
+    //
     @Override
     public void mouseClicked(MouseEvent e) {
         int row = this.flightsTable.rowAtPoint(e.getPoint()) ;
@@ -100,21 +125,21 @@ public class FlightsForm extends JFrame implements ActionListener, MouseListener
 
     @Override
     public void mousePressed(MouseEvent e) {
-
+        // empty mousePressed method
     }
 
     @Override
     public void mouseReleased(MouseEvent e) {
-
+        // empty mouseReleased method
     }
 
     @Override
     public void mouseEntered(MouseEvent e) {
-
+        // empty mouseEntered method
     }
 
     @Override
     public void mouseExited(MouseEvent e) {
-
+        // empty mouseExited method
     }
 }

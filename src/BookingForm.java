@@ -24,6 +24,7 @@ public class BookingForm extends JFrame implements ActionListener, TableModelLis
     public BookingForm(){
 
         backButton.addActionListener(this);
+        customerSupportBtn.addActionListener(this);
 
         this.setContentPane(this.rootPanel);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE) ;
@@ -34,9 +35,19 @@ public class BookingForm extends JFrame implements ActionListener, TableModelLis
 
     // Constructor that takes in user as parameter
     public BookingForm(User currUser){
+        // set title of frame
+        this.setTitle("Flights") ;
+
+        // set UI display look consistent with login page
+        try {
+            UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel"); //Windows Look and feel
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException e) {
+            System.out.println(e.toString());
+        }
 
         this.currUser = currUser ;
-        backButton.addActionListener(this);
+        this.backButton.addActionListener(this);
+        this.customerSupportBtn.addActionListener(this);
 
         this.setContentPane(this.rootPanel);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE) ;
@@ -50,12 +61,15 @@ public class BookingForm extends JFrame implements ActionListener, TableModelLis
         if(e.getSource() == backButton){
 
             // open the dashboard frame with the current User object passed back
+            System.out.println("support");
             DashboardForm prevDash = new DashboardForm(currUser) ;
             this.dispose() ;
         }
         if(e.getSource() == customerSupportBtn){
 
             // customer support live chat method
+            SupportChatbotForm initChat = new SupportChatbotForm() ;
+            System.out.println("support");
         }
     }
 
