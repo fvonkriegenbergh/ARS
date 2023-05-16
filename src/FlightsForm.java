@@ -28,6 +28,9 @@ public class FlightsForm extends JFrame implements ActionListener {
         this.setSize(600, 300);
         this.setLocationRelativeTo(null) ;
         this.setVisible(true);
+
+        this.backButton.addActionListener(this);
+        this.customerSupportBtn.addActionListener(this);
     }
 
     // default constructor
@@ -42,6 +45,9 @@ public class FlightsForm extends JFrame implements ActionListener {
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException e) {
             System.out.println(e.toString());
         }
+
+        this.backButton.addActionListener(this);
+        this.customerSupportBtn.addActionListener(this);
 
         this.currUser = currUser ;
 
@@ -58,12 +64,15 @@ public class FlightsForm extends JFrame implements ActionListener {
         if(e.getSource() == backButton){
 
             // open the dashboard frame with the current User object passed back
+            System.out.println("support");
             DashboardForm prevDash = new DashboardForm(currUser) ;
             this.dispose() ;
         }
         if(e.getSource() == customerSupportBtn){
 
             // customer support live chat method
+            SupportChatbotForm initChat = new SupportChatbotForm() ;
+            System.out.println("support");
         }
         if(e.getSource() == bookButton){
 

@@ -116,6 +116,7 @@ public class DashboardForm extends JFrame implements ActionListener {
         if(e.getSource() == customerSupportBtn){
 
             // open customer service live chat box
+            SupportChatbotForm initChat = new SupportChatbotForm() ;
 
         }
 

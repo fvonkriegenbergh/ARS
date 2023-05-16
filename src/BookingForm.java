@@ -24,6 +24,7 @@ public class BookingForm extends JFrame implements ActionListener, TableModelLis
     public BookingForm(){
 
         backButton.addActionListener(this);
+        customerSupportBtn.addActionListener(this);
 
         this.setContentPane(this.rootPanel);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE) ;
@@ -45,7 +46,8 @@ public class BookingForm extends JFrame implements ActionListener, TableModelLis
         }
 
         this.currUser = currUser ;
-        backButton.addActionListener(this);
+        this.backButton.addActionListener(this);
+        this.customerSupportBtn.addActionListener(this);
 
         this.setContentPane(this.rootPanel);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE) ;
@@ -59,12 +61,15 @@ public class BookingForm extends JFrame implements ActionListener, TableModelLis
         if(e.getSource() == backButton){
 
             // open the dashboard frame with the current User object passed back
+            System.out.println("support");
             DashboardForm prevDash = new DashboardForm(currUser) ;
             this.dispose() ;
         }
         if(e.getSource() == customerSupportBtn){
 
             // customer support live chat method
+            SupportChatbotForm initChat = new SupportChatbotForm() ;
+            System.out.println("support");
         }
     }
 
