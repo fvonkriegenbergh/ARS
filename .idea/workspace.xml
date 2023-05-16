@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d1434287-1e6a-4dea-b2b0-e06a3893ccbc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BookingForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BookingForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DashboardForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DashboardForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Flight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FlightsForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlightsForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LoginForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginForm.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LoginForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginForm.java" afterDir="false" />
     </list>
