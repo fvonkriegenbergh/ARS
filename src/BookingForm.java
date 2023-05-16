@@ -32,7 +32,7 @@ public class BookingForm extends JFrame implements ActionListener, TableModelLis
         this.setVisible(true);
     }
 
-    // default constructor
+    // Constructor that takes in user as parameter
     public BookingForm(User currUser){
 
         this.currUser = currUser ;

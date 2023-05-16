@@ -94,13 +94,14 @@ public class DashboardForm extends JFrame implements ActionListener {
         if(e.getSource() == bookFlightBtn){
 
             // open available flights page
-            BookingForm newBooking = new BookingForm(this.currentUser) ;
+            FlightSearchForm newSearchForm = new FlightSearchForm(this.currentUser) ;
             this.dispose() ;
         }
         if(e.getSource() == trackFlightBtn){
 
             // open user flights page
             FlightsForm newFlights = new FlightsForm(this.currentUser) ;
+            this.dispose() ;
         }
         if(e.getSource() == helpBtn){
 
@@ -110,8 +111,9 @@ public class DashboardForm extends JFrame implements ActionListener {
         if(e.getSource() == logOutBtn){
 
             // log out user
+            JOptionPane.showMessageDialog(this, "Logged out successful!") ;
             this.dispose() ;
-            JOptionPane.showMessageDialog(this, "Logged out successful!");
+            LoginForm newLogin = new LoginForm() ;
         }
         if(e.getSource() == customerSupportBtn){
 

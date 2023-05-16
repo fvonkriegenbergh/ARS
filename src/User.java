@@ -95,9 +95,21 @@ public class User {
         this.userFlights.add(newFlight)  ;
     }
 
-
+    // toString method for User information
     public String toString(){
         return this.userID + "\n" + this.fullName + "\n" + this.userPassword + "\n" + this.userID
                 + "\n" + this.email + "\n" + this.flierMiles ;
+    }
+
+    // generate 2d array to return for populating the JTable for FlightsForm
+    public String[][] getFlightData(){
+        String[][] returnFlightData = new String[this.userFlights.size()][6] ;
+        if(!this.userFlights.isEmpty()){
+            for(int i = 0; i < this.userFlights.size(); i++){
+                returnFlightData[i] = this.userFlights.get(i).getFlightInformation() ;
+            }
+            return returnFlightData ;
+        }
+        return new String[0][0] ;
     }
 }

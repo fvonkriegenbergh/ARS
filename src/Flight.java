@@ -1,30 +1,39 @@
 public class Flight {
 
     private boolean baggage ;
-    private int flightID ;
     private int ticketNum ;
     private String arrivalTime ;
     private String departTime ;
     private String arrivalDest ;
     private String departDest ;
     private String airline ;
+    private int flightMileage ;
+    private int flightPrice ;
+    private String flightDuration ;
+    private String departDate ;
+    private String returnDate ;
+
 
     // default constructor
     public Flight(){
     }
 
     // constructor that takes in all data for instance variables
-    public Flight(boolean baggage, int flightID, int ticketNum,
-                  String arrivalTime, String departTime,
-                  String arrivalDest, String departDest, String airline) {
+    public Flight(boolean baggage, int ticketNum, String arrivalTime, String departTime,
+                  String arrivalDest, String departDest, String airline, int flightMileage,
+                  int flightPrice, String flightDuration, String departDate, String returnDate) {
         this.baggage = baggage;
-        this.flightID = flightID;
         this.ticketNum = ticketNum;
         this.arrivalTime = arrivalTime;
         this.departTime = departTime;
         this.arrivalDest = arrivalDest;
         this.departDest = departDest;
         this.airline = airline;
+        this.flightMileage = flightMileage ;
+        this.flightPrice = flightPrice ;
+        this.flightDuration = flightDuration ;
+        this.departDate = departDate ;
+        this.returnDate = returnDate ;
     }
 
     //
@@ -32,10 +41,6 @@ public class Flight {
     //
     public boolean isBaggage() {
         return baggage;
-    }
-
-    public int getFlightID() {
-        return flightID;
     }
 
     public int getTicketNum() {
@@ -62,12 +67,18 @@ public class Flight {
         return airline;
     }
 
+    public int getFlightMileage() {return flightMileage; }
+
+    public int getFlightPrice() { return flightPrice; }
+
+    public String getFlightDuration() { return flightDuration; }
+
+    public String getDepartDate() { return departDate; }
+
+    public String getReturnDate() { return returnDate; }
+
     public void setBaggage(boolean baggage) {
         this.baggage = baggage;
-    }
-
-    public void setFlightID(int flightID) {
-        this.flightID = flightID;
     }
 
     public void setTicketNum(int ticketNum) {
@@ -93,8 +104,26 @@ public class Flight {
     public void setAirline(String airline) {
         this.airline = airline;
     }
+
+    public void setFlightMileage(int newFlightMileage) { this.flightMileage = newFlightMileage; }
+
+    public void setFlightPrice(int newFlightPrice) { this.flightPrice = newFlightPrice; }
+
+    public void setFlightDuration(String newFlightDuration) {this.flightDuration = newFlightDuration; }
+
+    public void setDepartDate(String newDepartDate) { this.departDate = newDepartDate; }
+
+    public void setReturnDate(String newReturnDate) { this.returnDate = newReturnDate; }
     //
     // End of setters and getters flights
     //
 
+    public String toString(){
+        return "Ticket Num:\n" + this.ticketNum + "Arrival Depart Time:\n" + this.departTime + "Airline:\n" + this.airline ;
+    }
+
+    public String[] getFlightInformation(){
+        return new String[]{this.baggage + "", this.ticketNum + "", this.arrivalTime, this.departTime,
+                            this.arrivalDest, this.departDest} ;
+    }
 }

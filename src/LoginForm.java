@@ -66,8 +66,10 @@ public class LoginForm extends JFrame implements ActionListener {
         }
         else{
 
-            // send user credentails to database to check if valid user
+            // send user credentials to database to check if valid user
             System.out.println("Login method") ;
+
+            DashboardForm newDash = new DashboardForm() ;
         }
     }
 
@@ -81,7 +83,7 @@ public class LoginForm extends JFrame implements ActionListener {
         else{
 
             // send user data to database to create new user
-            System.out.println("Sign up user") ;
+
         }
     }
 }
