@@ -58,7 +58,14 @@ public class FlightsForm extends JFrame implements ActionListener, MouseListener
         this.backButton.addActionListener(this) ;
 
         // populate table with currUser flights
-        setYourFlights(this.currUser.getFlightData()) ;
+//        setYourFlights(this.currUser.getFlightData()) ;
+//        populate table with currUser flights
+        if(!this.currUser.getUserFlights().isEmpty()){
+
+            // add mouse listener to check which flight is clicked
+            setYourFlights(this.currUser.getFlightData()) ;
+            this.flightsTable.addMouseListener(this) ;
+        }
 
         // add mouse listener to check which flight is clicked
         this.flightsTable.addMouseListener(this) ;

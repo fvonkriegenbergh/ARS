@@ -94,7 +94,7 @@ public class DashboardForm extends JFrame implements ActionListener {
         if(e.getSource() == bookFlightBtn){
 
             // open available flights page
-            FlightSearchForm newSearchForm = new FlightSearchForm(this.currentUser) ;
+            SearchForm newSearchForm = new SearchForm(this.currentUser) ;
             this.dispose() ;
         }
         if(e.getSource() == trackFlightBtn){

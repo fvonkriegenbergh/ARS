@@ -1,13 +1,13 @@
 public class Flight {
 
     private boolean baggage ;
-    private int ticketNum ;
+    private String ticketNum ;
     private String arrivalTime ;
     private String departTime ;
     private String arrivalDest ;
     private String departDest ;
     private String airline ;
-    private int flightMileage ;
+    private String flightMileage ;
     private int flightPrice ;
     private String flightDuration ;
     private String departDate ;
@@ -19,8 +19,8 @@ public class Flight {
     }
 
     // constructor that takes in all data for instance variables
-    public Flight(boolean baggage, int ticketNum, String arrivalTime, String departTime,
-                  String arrivalDest, String departDest, String airline, int flightMileage,
+    public Flight(boolean baggage, String ticketNum, String arrivalTime, String departTime,
+                  String arrivalDest, String departDest, String airline, String flightMileage,
                   int flightPrice, String flightDuration, String departDate, String returnDate) {
         this.baggage = baggage;
         this.ticketNum = ticketNum;
@@ -43,7 +43,7 @@ public class Flight {
         return baggage;
     }
 
-    public int getTicketNum() {
+    public String getTicketNum() {
         return ticketNum;
     }
 
@@ -67,7 +67,7 @@ public class Flight {
         return airline;
     }
 
-    public int getFlightMileage() {return flightMileage; }
+    public String getFlightMileage() {return flightMileage; }
 
     public int getFlightPrice() { return flightPrice; }
 
@@ -81,7 +81,7 @@ public class Flight {
         this.baggage = baggage;
     }
 
-    public void setTicketNum(int ticketNum) {
+    public void setTicketNum(String ticketNum) {
         this.ticketNum = ticketNum;
     }
 
@@ -105,7 +105,7 @@ public class Flight {
         this.airline = airline;
     }
 
-    public void setFlightMileage(int newFlightMileage) { this.flightMileage = newFlightMileage; }
+    public void setFlightMileage(String newFlightMileage) { this.flightMileage = newFlightMileage; }
 
     public void setFlightPrice(int newFlightPrice) { this.flightPrice = newFlightPrice; }
 

@@ -7,7 +7,7 @@ public class User {
     private String userPassword ;
     private String userID ;
     private String email ;
-    private ArrayList<Flight> userFlights ;
+    private ArrayList<Flight> userFlights = new ArrayList<Flight>() ;
     private int flierMiles ;
 
     // default constructor
