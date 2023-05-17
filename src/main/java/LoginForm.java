@@ -1,18 +1,25 @@
+import com.mongodb.BasicDBObject;
+import com.mongodb.client.*;
+import org.bson.Document;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+
+import static com.mongodb.client.model.Filters.eq;
 
 public class LoginForm extends JFrame implements ActionListener {
     private JPanel rootPanel;
     private JTextField usernameLoginTextField;
     private JPasswordField loginPasswordField;
     private JTextField nameCreateAccountTextField;
-    private JTextField usernameCreateAccountTextField;
+    private JTextField emailCreateAccountTextField;
     private JTextField passwordCreateAccountPasswordField;
     private JTextField cnfmPassCreateAccountPasswordField;
     private JButton createAccountButton;
     private JButton loginButton;
     private JLabel arsTitleLabel;
+    private JTextField usernameCreateAccountTextField;
 
     public LoginForm(){
 
@@ -49,7 +56,8 @@ public class LoginForm extends JFrame implements ActionListener {
             addUser(this.nameCreateAccountTextField.getText(),
                     this.usernameCreateAccountTextField.getText(),
                     this.passwordCreateAccountPasswordField.getText(),
-                    this.cnfmPassCreateAccountPasswordField.getText()) ;
+                    this.cnfmPassCreateAccountPasswordField.getText(),
+                    this.emailCreateAccountTextField.getText()) ;
         }
     }
 
@@ -69,12 +77,51 @@ public class LoginForm extends JFrame implements ActionListener {
             // send user credentials to database to check if valid user
             System.out.println("Login method") ;
 
-            DashboardForm newDash = new DashboardForm() ;
+            User theUser = new User();
+
+            MongoClient client = MongoClients.create(
+                    "mongodb+srv://Ali068:SliverSliver718718@cluster0.uwuwakt.mongodb.net/?retryWrites=true&w=majority");
+
+            MongoDatabase db = client.getDatabase("AirlineResSystem");
+
+            MongoCollection tUser = db.getCollection("tUser");
+
+            BasicDBObject searchQuery = new BasicDBObject();
+            searchQuery.put("username", username);
+            MongoCursor<Document> theCursor = tUser.find(searchQuery).iterator();
+            while (theCursor.hasNext()) {
+                theUser.setUserName((String) theCursor.next().get("username"));
+            }
+            theCursor = tUser.find(searchQuery).iterator();
+            while (theCursor.hasNext()) {
+                theUser.setFullName((String) theCursor.next().get("fullname"));
+            }
+            theCursor = tUser.find(searchQuery).iterator();
+            while (theCursor.hasNext()) {
+                theUser.setUserPassword((String) theCursor.next().get("password"));
+            }
+            theCursor = tUser.find(searchQuery).iterator();
+            while (theCursor.hasNext()) {
+                theUser.setFlierMiles((Integer) theCursor.next().get("fliermiles"));
+            }
+            theCursor = tUser.find(searchQuery).iterator();
+            while (theCursor.hasNext()) {
+                theUser.setEmail((String) theCursor.next().get("email"));
+            }
+
+            String currentUserPassword = theUser.getUserPassword();
+
+           if (currentUserPassword.equals(password)) {
+                DashboardForm newDash = new DashboardForm(theUser) ;
+            }
+           else if (!currentUserPassword.equals(password)) {
+               JOptionPane.showMessageDialog(this, "Login information incorrect!");
+           }
         }
     }
 
     // addUser method to take in data from create account text fields and send them to database to create new user
-    private void addUser(String name, String username, String password, String cnfmPassword){
+    private void addUser(String name, String username, String password, String cnfmPassword, String email){
 
         // send user data from sign up text boxes to database to add new user
         if(!password.equals(cnfmPassword)){
@@ -83,7 +130,19 @@ public class LoginForm extends JFrame implements ActionListener {
         else{
 
             // send user data to database to create new user
+            MongoClient client = MongoClients.create(
+                    "mongodb+srv://Ali068:SliverSliver718718@cluster0.uwuwakt.mongodb.net/?retryWrites=true&w=majority");
 
+            MongoDatabase db = client.getDatabase("AirlineResSystem");
+
+            MongoCollection tUser = db.getCollection("tUser");
+
+            Document newUser = new Document("username", username).append("password", password).
+                    append("fullname", name).append("email", email).append("fliermiles", 0);
+
+            JOptionPane.showMessageDialog(this, username + " has been registered!");
+
+            tUser.insertOne(newUser);
         }
     }
 }
