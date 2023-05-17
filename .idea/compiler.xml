@@ -9,8 +9,5 @@
         <module name="ARS" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="ARS" target="18" />
-    </bytecodeTargetLevel>
   </component>
 </project>
