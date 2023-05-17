@@ -75,6 +75,8 @@ public class FlightSearchForm extends JFrame implements ActionListener {
     // send input ot database for search query and return desired flights
     private void searchFlights(String departLocInput, String arrivalLocInput, String departDateInput, String returnDateInput){
 
+
+        FlightsForm flightForm = new FlightsForm();
     }
 
 }

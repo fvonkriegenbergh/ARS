@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1434287-1e6a-4dea-b2b0-e06a3893ccbc" name="Changes" comment="Login gets user info from DB" />
+    <list default="true" id="d1434287-1e6a-4dea-b2b0-e06a3893ccbc" name="Changes" comment="Sign-up and Login page working as intended" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,20 +18,13 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2P4a1SDMz9hoy9QAkn3N1GdrRyO" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="1" id="Add" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -40,16 +33,11 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
   }
 }</component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Dybrt\IdeaProjects\ARS\src\main\java" />
-      <recent name="C:\Users\Dybrt\IdeaProjects\ARS\src" />
-    </key>
-  </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="BookingForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BookingForm" />
@@ -111,35 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683653823272</updated>
     </task>
-    <task id="LOCAL-00003" summary="Basic MongoDB implementation started">
-      <created>1683951591639</created>
+    <task id="LOCAL-00003" summary="Sign-up and Login page working as intended">
+      <created>1684298104873</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1683951591639</updated>
+      <updated>1684298104873</updated>
     </task>
-    <task id="LOCAL-00004" summary="Login gets user info from DB">
-      <created>1684295806096</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1684295806096</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Login gets user info from DB">
-      <created>1684295831701</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1684295831701</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Login gets user info from DB">
-      <created>1684298241583</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1684298241583</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -156,8 +123,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Set up basics of login form" />
     <MESSAGE value="Commit untracked files" />
-    <MESSAGE value="Basic MongoDB implementation started" />
-    <MESSAGE value="Login gets user info from DB" />
-    <option name="LAST_COMMIT_MESSAGE" value="Login gets user info from DB" />
+    <MESSAGE value="Sign-up and Login page working as intended" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sign-up and Login page working as intended" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
