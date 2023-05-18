@@ -106,7 +106,9 @@ public class DashboardForm extends JFrame implements ActionListener {
         if(e.getSource() == helpBtn){
 
             // open help page
-
+            JOptionPane.showMessageDialog(this,"1. Book Flight - Book available flights\n" +
+                                                                        "2. Track Flight- Display your currently tracked flights\n" +
+                                                                        "3. Chat Support - Speak with an ARS representative") ;
         }
         if(e.getSource() == logOutBtn){
 

@@ -109,14 +109,20 @@ public class BookingForm extends JFrame implements ActionListener, MouseListener
         }
         if(e.getSource() == bookButton){
             bookNewFlight(displayFlight.get(this.currClickFlight));
+            DashboardForm newDash = new DashboardForm(this.currUser) ;
+            this.dispose() ;
         }
     }
 
     public void bookNewFlight(Flight newFlight){
-        this.currUser.bookFlight(newFlight) ;
-        this.currUser.addFlierMiles(Integer.parseInt(newFlight.getFlightMileage())) ;
-        // send new flight to user's flights in the database
 
+        //2,800 -> 2800
+        String newFlightMileage = newFlight.getFlightMileage().replace(",", "") ;
+        this.currUser.bookFlight(newFlight) ;
+        this.currUser.addFlierMiles(Integer.parseInt(newFlightMileage)) ;
+        System.out.println(this.currUser.getFlierMiles()) ;
+        JOptionPane.showMessageDialog(this,"Successfully Booked Flight!") ;
+        // send new flight to user's flights in the database
     }
 
     // method to display avaiable flights pulled from db
