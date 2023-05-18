@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1434287-1e6a-4dea-b2b0-e06a3893ccbc" name="Changes" comment="Login gets user info from DB">
+    <list default="true" id="d1434287-1e6a-4dea-b2b0-e06a3893ccbc" name="Changes" comment="Pulling flight info from DB">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DashboardForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DashboardForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BookingForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BookingForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Flight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FlightSearchForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SearchForm.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FlightSearchForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SearchForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FlightsForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FlightsForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LoginForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LoginForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FlightSearchForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SearchForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SearchForm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +113,21 @@
       <option name="project" value="LOCAL" />
       <updated>1684298104873</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Pulling flight info from DB">
+      <created>1684349434351</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684349434351</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Pulling flight info from DB">
+      <created>1684349449743</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684349449743</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -136,7 +145,8 @@
     <MESSAGE value="Set up basics of login form" />
     <MESSAGE value="Commit untracked files" />
     <MESSAGE value="Sign-up and Login page working as intended" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sign-up and Login page working as intended" />
+    <MESSAGE value="Pulling flight info from DB" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pulling flight info from DB" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -119,7 +119,7 @@ public class Flight {
     //
 
     public String toString(){
-        return "Ticket Num:\n" + this.ticketNum + "Arrival Depart Time:\n" + this.departTime + "Airline:\n" + this.airline ;
+        return "Ticket Num: " + this.ticketNum + "\nDepart Time: " + this.departTime + "\nAirline: " + this.airline ;
     }
 
     public String[] getFlightInformation(){

@@ -3,6 +3,7 @@ import javax.swing.event.TableModelEvent;
 import javax.swing.event.TableModelListener;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
 public class BookingForm extends JFrame implements ActionListener, TableModelListener {
     private JTable flightsTable;
@@ -35,6 +36,28 @@ public class BookingForm extends JFrame implements ActionListener, TableModelLis
 
     // Constructor that takes in user as parameter
     public BookingForm(User currUser){
+        // set title of frame
+        this.setTitle("Flights") ;
+
+        // set UI display look consistent with login page
+        try {
+            UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel"); //Windows Look and feel
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException e) {
+            System.out.println(e.toString());
+        }
+
+        this.currUser = currUser ;
+        this.backButton.addActionListener(this);
+        this.customerSupportBtn.addActionListener(this);
+
+        this.setContentPane(this.rootPanel);
+        this.setDefaultCloseOperation(EXIT_ON_CLOSE) ;
+        this.setSize(600, 300);
+        this.setLocationRelativeTo(null) ;
+        this.setVisible(true);
+    }
+
+    public BookingForm(User currUser, ArrayList<Flight> currFlights){
         // set title of frame
         this.setTitle("Flights") ;
 
