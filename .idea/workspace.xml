@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1434287-1e6a-4dea-b2b0-e06a3893ccbc" name="Changes" comment="Updated help button and finish main GUI functionality requirements">
+    <list default="true" id="d1434287-1e6a-4dea-b2b0-e06a3893ccbc" name="Changes" comment="Arrival dest filtering works">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SearchForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SearchForm.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SearchForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SearchForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SupportChatbotForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SupportChatbotForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SupportChatbotForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SupportChatbotForm.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684397132383</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Arrival dest filtering works">
+      <created>1684444627930</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1684444627930</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -160,7 +170,8 @@
     <MESSAGE value="Pulling flight info from DB" />
     <MESSAGE value="Added display functionality for BookingForm" />
     <MESSAGE value="Updated help button and finish main GUI functionality requirements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated help button and finish main GUI functionality requirements" />
+    <MESSAGE value="Arrival dest filtering works" />
+    <option name="LAST_COMMIT_MESSAGE" value="Arrival dest filtering works" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

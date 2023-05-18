@@ -16,9 +16,7 @@ public class SearchForm extends JFrame implements ActionListener {
     private JLabel departureLocationLbl;
     private JLabel arrivalLocLbl;
     private JTextField arrivalLocationInput;
-    private JTextField departDateInput;
     private JTextField returnDateInput;
-    private JLabel returnDateILbl;
     private JButton searchFlightBtn;
     private JButton searchBackBtn;
     private User currUser ;
@@ -59,15 +57,15 @@ public class SearchForm extends JFrame implements ActionListener {
         if(e.getSource() == searchFlightBtn){
             String departLocInput = this.departLocInput.getText() ;
             String arrivalLocInput = this.arrivalLocationInput.getText() ;
-            String departDateInput = this.departDate.getText() ;
-            String returnDateInput = this.returnDateInput.getText() ;
+            //String departDateInput = this.departDate.getText() ;
+            //String returnDateInput = this.returnDateInput.getText() ;
 
-            if((departLocInput.equals("")) || (arrivalLocInput.equals("")) || (departDateInput.equals("")) || (returnDateInput.equals(""))){
+            if((departLocInput.equals("")) || (arrivalLocInput.equals(""))){
                 JOptionPane.showMessageDialog(this, "One or more fields missing input!");
             }
             else{
                 System.out.println("test Showing available flights") ;
-                searchFlights(departLocInput, arrivalLocInput, departDateInput, returnDateInput) ;
+                searchFlights(departLocInput, arrivalLocInput) ;
             }
         }
         if(e.getSource() == searchBackBtn){
@@ -78,7 +76,7 @@ public class SearchForm extends JFrame implements ActionListener {
 
     // take in user input for desired searched flight
     // send input to database for search query and return desired flights
-    private void searchFlights(String departLocInput, String arrivalLocInput, String departDateInput, String returnDateInput){
+    private void searchFlights(String departLocInput, String arrivalLocInput){
         Flight theFlight ;
         ArrayList<Flight> newFlight = new ArrayList<Flight>();
         MongoClient client = MongoClients.create(
