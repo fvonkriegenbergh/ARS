@@ -8,7 +8,7 @@ public class User {
     private String userID ;
     private String email ;
     private ArrayList<Flight> userFlights = new ArrayList<Flight>() ;
-    private int flierMiles ;
+    private int flierMiles = 0 ;
 
     // default constructor
     public User(){}
@@ -86,7 +86,7 @@ public class User {
 
     // method to add new additional miles to user's flier miles
     public void addFlierMiles(int newFlierMiles){
-        this.flierMiles = flierMiles + newFlierMiles ;
+        this.flierMiles += newFlierMiles ;
     }
 
     // method to add new flight to user's flights data struct
