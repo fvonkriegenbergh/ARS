@@ -30,15 +30,6 @@
         </properties>
         <border type="etched" title="Selected Flight"/>
         <children>
-          <component id="9f58b" class="javax.swing.JLabel">
-            <constraints>
-              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-              <gridbag weightx="0.0" weighty="0.0"/>
-            </constraints>
-            <properties>
-              <text value="Flight Number"/>
-            </properties>
-          </component>
           <hspacer id="6d392">
             <constraints>
               <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
@@ -90,31 +81,13 @@
               <text value="Baggage"/>
             </properties>
           </component>
-          <component id="8b3a9" class="javax.swing.JLabel">
-            <constraints>
-              <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-              <gridbag weightx="0.0" weighty="0.0"/>
-            </constraints>
-            <properties>
-              <text value="Seat Number"/>
-            </properties>
-          </component>
-          <component id="9803a" class="javax.swing.JLabel" binding="flightNumLabel">
-            <constraints>
-              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-              <gridbag weightx="0.0" weighty="0.0"/>
-            </constraints>
-            <properties>
-              <text value="000000"/>
-            </properties>
-          </component>
           <component id="e6512" class="javax.swing.JLabel" binding="departDestLabel">
             <constraints>
               <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
               <gridbag weightx="0.0" weighty="0.0"/>
             </constraints>
             <properties>
-              <text value="LAX"/>
+              <text value=""/>
             </properties>
           </component>
           <component id="11842" class="javax.swing.JLabel" binding="arriveDestLabel">
@@ -123,7 +96,7 @@
               <gridbag weightx="0.0" weighty="0.0"/>
             </constraints>
             <properties>
-              <text value="LAX"/>
+              <text value=""/>
             </properties>
           </component>
           <component id="e52a0" class="javax.swing.JLabel" binding="departTimeLabel">
@@ -132,7 +105,7 @@
               <gridbag weightx="0.0" weighty="0.0"/>
             </constraints>
             <properties>
-              <text value="00:00:00"/>
+              <text value=""/>
             </properties>
           </component>
           <component id="5a78" class="javax.swing.JLabel" binding="arriveTimeLabel">
@@ -141,7 +114,7 @@
               <gridbag weightx="0.0" weighty="0.0"/>
             </constraints>
             <properties>
-              <text value="00:00:00"/>
+              <text value=""/>
             </properties>
           </component>
           <component id="ff97" class="javax.swing.JLabel" binding="baggageLabel">
@@ -150,21 +123,12 @@
               <gridbag weightx="0.0" weighty="0.0"/>
             </constraints>
             <properties>
-              <text value="0"/>
-            </properties>
-          </component>
-          <component id="a90bb" class="javax.swing.JLabel" binding="seatNumLabel">
-            <constraints>
-              <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-              <gridbag weightx="0.0" weighty="0.0"/>
-            </constraints>
-            <properties>
-              <text value="0A"/>
+              <text value=""/>
             </properties>
           </component>
           <component id="49c99" class="javax.swing.JLabel">
             <constraints>
-              <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
               <gridbag weightx="0.0" weighty="0.0"/>
             </constraints>
             <properties>
@@ -173,16 +137,16 @@
           </component>
           <component id="4472a" class="javax.swing.JLabel" binding="ticketNumLabel">
             <constraints>
-              <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
               <gridbag weightx="0.0" weighty="0.0"/>
             </constraints>
             <properties>
-              <text value="000000"/>
+              <text value=""/>
             </properties>
           </component>
           <component id="689fe" class="javax.swing.JButton" binding="bookButton" default-binding="true">
             <constraints>
-              <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
               <gridbag weightx="0.0" weighty="0.0"/>
             </constraints>
             <properties>

@@ -79,7 +79,7 @@ public class SearchForm extends JFrame implements ActionListener {
     // take in user input for desired searched flight
     // send input to database for search query and return desired flights
     private void searchFlights(String departLocInput, String arrivalLocInput, String departDateInput, String returnDateInput){
-        Flight theFlight = new Flight();
+        Flight theFlight ;
         ArrayList<Flight> newFlight = new ArrayList<Flight>();
         MongoClient client = MongoClients.create(
                 "mongodb+srv://Nelso177:Beartear836@cluster0.uwuwakt.mongodb.net/?retryWrites=true&w=majority");
@@ -92,62 +92,39 @@ public class SearchForm extends JFrame implements ActionListener {
         searchQuery.put("departure",departLocInput);
         MongoCursor<Document> theCursor = tFlights.find(searchQuery).iterator();
         while (theCursor.hasNext()) {
-            theFlight.setDepartDest((String) theCursor.next().get("departure"));
+            theFlight = new Flight() ;
+            var doc = theCursor.next();
+            theFlight.setDepartDest((String) doc.get("departure"));
+            theFlight.setArrivalDest((String) doc.get("arrival"));
+            theFlight.setDepartDate((String) doc.get("departDate"));
+            theFlight.setReturnDate((String) doc.get("returnDate"));
+            theFlight.setFlightPrice((Integer) doc.get("flightPrice"));
+            theFlight.setBaggage((Boolean) doc.get("baggage"));
+            theFlight.setFlightDuration((String) doc.get("flightDuration"));
+            theFlight.setFlightMileage((String) doc.get("flightMileage"));
+            theFlight.setTicketNum((String) doc.get("ticketNum"));
+            theFlight.setDepartTime((String) doc.get("departTime"));
+            theFlight.setArrivalTime((String) doc.get("arrivalTime"));
+
+
+            if (theFlight.getDepartDest().equals(departLocInput)){
+                newFlight.add(theFlight);
+                System.out.println(newFlight.toString());
+            }
         }
 
-        if(theFlight.getDepartDest().equals(departLocInput)){
-            theCursor = tFlights.find(searchQuery).iterator();
-            while (theCursor.hasNext()) {
-                theFlight.setArrivalDest((String) theCursor.next().get("arrival"));
-            }
-            theCursor = tFlights.find(searchQuery).iterator();
-            while (theCursor.hasNext()) {
-                theFlight.setDepartDate((String) theCursor.next().get("departDate"));
-            }
-            theCursor = tFlights.find(searchQuery).iterator();
-            while (theCursor.hasNext()) {
-                theFlight.setReturnDate((String) theCursor.next().get("returnDate"));
-            }
-            theCursor = tFlights.find(searchQuery).iterator();
-            while (theCursor.hasNext()) {
-                theFlight.setFlightPrice((Integer) theCursor.next().get("flightPrice"));
-            }
-            theCursor = tFlights.find(searchQuery).iterator();
-            while (theCursor.hasNext()) {
-                theFlight.setBaggage((Boolean) theCursor.next().get("baggage"));
-            }
-            theCursor = tFlights.find(searchQuery).iterator();
-            while (theCursor.hasNext()) {
-                theFlight.setFlightDuration((String) theCursor.next().get("flightDuration"));
-            }
-            theCursor = tFlights.find(searchQuery).iterator();
-            while (theCursor.hasNext()) {
-                theFlight.setFlightMileage((String) theCursor.next().get("flightMileage"));
-            }
-            theCursor = tFlights.find(searchQuery).iterator();
-            while (theCursor.hasNext()) {
-                theFlight.setTicketNum((String) theCursor.next().get("ticketNum"));
-            }
-            theCursor = tFlights.find(searchQuery).iterator();
-            while (theCursor.hasNext()) {
-                theFlight.setDepartTime((String) theCursor.next().get("departTime"));
-            }
-            theCursor = tFlights.find(searchQuery).iterator();
-            while (theCursor.hasNext()) {
-                theFlight.setArrivalTime((String) theCursor.next().get("arrivalTime"));
-            }
-            theCursor = tFlights.find(searchQuery).iterator();
-            newFlight.add(theFlight);
-            for(int i= 0; i < newFlight.size(); i++){
-                System.out.println(newFlight.get(i).toString());
-            }
+        if (!newFlight.isEmpty()){
+            //display on BookingForm: baggage, ticket, dept/arriv time, dept/arriv location
+            BookingForm bookingForm = new BookingForm(this.currUser, newFlight);
+            this.dispose() ;
+        }
+        else{
+            JOptionPane.showMessageDialog(this, "No Flights found with those search parameters.");
         }
 
 
 
-        //display on BookingForm: baggage, ticket, dept/arriv time, dept/arriv location
-        BookingForm bookingForm = new BookingForm(this.currUser, newFlight);
-        this.dispose() ;
+
 
     }
 
