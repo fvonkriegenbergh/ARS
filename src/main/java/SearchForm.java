@@ -107,7 +107,7 @@ public class SearchForm extends JFrame implements ActionListener {
             theFlight.setArrivalTime((String) doc.get("arrivalTime"));
 
 
-            if (theFlight.getDepartDest().equals(departLocInput)){
+            if (theFlight.getDepartDest().equals(departLocInput) && theFlight.getArrivalDest().equals(arrivalLocInput)){
                 newFlight.add(theFlight);
                 System.out.println(newFlight.toString());
             }

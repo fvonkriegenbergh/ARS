@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d1434287-1e6a-4dea-b2b0-e06a3893ccbc" name="Changes" comment="Updated help button and finish main GUI functionality requirements">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BookingForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BookingForm.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BookingForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BookingForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FlightsForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FlightsForm.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SearchForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SearchForm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
