@@ -80,7 +80,7 @@ public class LoginForm extends JFrame implements ActionListener {
             User theUser = new User();
 
             MongoClient client = MongoClients.create(
-                    "mongodb+srv://Ali068:SliverSliver718718@cluster0.uwuwakt.mongodb.net/?retryWrites=true&w=majority");
+                    "mongodb+srv://Nelso177:Beartear836@cluster0.uwuwakt.mongodb.net/?retryWrites=true&w=majority");
 
             MongoDatabase db = client.getDatabase("AirlineResSystem");
 
