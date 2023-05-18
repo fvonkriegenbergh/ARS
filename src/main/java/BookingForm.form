@@ -191,7 +191,7 @@
           </component>
         </children>
       </grid>
-      <component id="169a6" class="javax.swing.JTable" binding="flightsTable">
+      <scrollpane id="2cd4e" binding="scrollFlight">
         <constraints>
           <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="50"/>
@@ -199,10 +199,16 @@
           <gridbag weightx="0.0" weighty="1.0"/>
         </constraints>
         <properties>
-          <autoCreateRowSorter value="true"/>
           <preferredSize width="500" height="200"/>
         </properties>
-      </component>
+        <border type="none"/>
+        <children>
+          <component id="6a781" class="javax.swing.JTable" binding="flightsTable">
+            <constraints/>
+            <properties/>
+          </component>
+        </children>
+      </scrollpane>
       <component id="bf41e" class="javax.swing.JButton" binding="customerSupportBtn">
         <constraints>
           <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="2" fill="1" indent="0" use-parent-layout="false"/>

@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1434287-1e6a-4dea-b2b0-e06a3893ccbc" name="Changes" comment="Sign-up and Login page working as intended" />
+    <list default="true" id="d1434287-1e6a-4dea-b2b0-e06a3893ccbc" name="Changes" comment="Pulling flight info from DB">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BookingForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BookingForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Flight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SearchForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SearchForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/BookingForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BookingForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FlightsForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FlightsForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LoginForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LoginForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,7 +34,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2P4a1SDMz9hoy9QAkn3N1GdrRyO" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -106,7 +118,21 @@
       <option name="project" value="LOCAL" />
       <updated>1684298104873</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Pulling flight info from DB">
+      <created>1684349434351</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684349434351</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Pulling flight info from DB">
+      <created>1684349449743</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684349449743</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -124,7 +150,8 @@
     <MESSAGE value="Set up basics of login form" />
     <MESSAGE value="Commit untracked files" />
     <MESSAGE value="Sign-up and Login page working as intended" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sign-up and Login page working as intended" />
+    <MESSAGE value="Pulling flight info from DB" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pulling flight info from DB" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
