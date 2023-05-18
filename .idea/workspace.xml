@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1434287-1e6a-4dea-b2b0-e06a3893ccbc" name="Changes" comment="Added display functionality for BookingForm">
+    <list default="true" id="d1434287-1e6a-4dea-b2b0-e06a3893ccbc" name="Changes" comment="Updated help button and finish main GUI functionality requirements">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BookingForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BookingForm.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/BookingForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BookingForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DashboardForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DashboardForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/BookingForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BookingForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Flight.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Flight.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FlightsForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FlightsForm.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SearchForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SearchForm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684393423448</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Updated help button and finish main GUI functionality requirements">
+      <created>1684397132383</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1684397132383</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -157,7 +162,8 @@
     <MESSAGE value="Sign-up and Login page working as intended" />
     <MESSAGE value="Pulling flight info from DB" />
     <MESSAGE value="Added display functionality for BookingForm" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added display functionality for BookingForm" />
+    <MESSAGE value="Updated help button and finish main GUI functionality requirements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated help button and finish main GUI functionality requirements" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

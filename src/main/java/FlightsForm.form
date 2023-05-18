@@ -60,7 +60,7 @@
               <gridbag weightx="0.0" weighty="0.0"/>
             </constraints>
             <properties>
-              <text value="Flight Number"/>
+              <text value=""/>
             </properties>
           </component>
           <hspacer id="ee0b4">
