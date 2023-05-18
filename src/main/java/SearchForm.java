@@ -1,8 +1,9 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
-public class FlightSearchForm extends JFrame implements ActionListener {
+public class SearchForm extends JFrame implements ActionListener {
     private JPanel mainSearchPan;
     private JLabel departDate;
     private JPanel departArrivalLocationPan;
@@ -19,7 +20,7 @@ public class FlightSearchForm extends JFrame implements ActionListener {
     private User currUser ;
 
     // default constructor
-    public FlightSearchForm(){
+    public SearchForm(){
 
         this.searchFlightBtn.addActionListener(this) ;
         this.searchBackBtn.addActionListener(this) ;
@@ -33,7 +34,7 @@ public class FlightSearchForm extends JFrame implements ActionListener {
     }
 
     // constructor that takes in user in parameter
-    public FlightSearchForm(User currUser){
+    public SearchForm(User currUser){
 
         this.currUser = currUser ;
 
@@ -75,8 +76,8 @@ public class FlightSearchForm extends JFrame implements ActionListener {
     // send input ot database for search query and return desired flights
     private void searchFlights(String departLocInput, String arrivalLocInput, String departDateInput, String returnDateInput){
 
-
-        FlightsForm flightForm = new FlightsForm();
+        ArrayList<Flight> availFlight = new ArrayList<Flight>() ;
+        BookingForm newBook = new BookingForm(this.currUser) ;
     }
 
 }

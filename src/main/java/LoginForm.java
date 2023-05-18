@@ -113,6 +113,7 @@ public class LoginForm extends JFrame implements ActionListener {
 
            if (currentUserPassword.equals(password)) {
                 DashboardForm newDash = new DashboardForm(theUser) ;
+                this.dispose();
             }
            else if (!currentUserPassword.equals(password)) {
                JOptionPane.showMessageDialog(this, "Login information incorrect!");

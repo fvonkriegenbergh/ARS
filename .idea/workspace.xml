@@ -4,7 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1434287-1e6a-4dea-b2b0-e06a3893ccbc" name="Changes" comment="Sign-up and Login page working as intended" />
+    <list default="true" id="d1434287-1e6a-4dea-b2b0-e06a3893ccbc" name="Changes" comment="Sign-up and Login page working as intended">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BookingForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BookingForm.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BookingForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BookingForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DashboardForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DashboardForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FlightSearchForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FlightSearchForm.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FlightSearchForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SearchForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FlightsForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FlightsForm.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FlightsForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FlightsForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LoginForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LoginForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/BookingForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BookingForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DashboardForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DashboardForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FlightSearchForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FlightsForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FlightsForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LoginForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LoginForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/GridConstraints.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/GridConstraints.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +39,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">

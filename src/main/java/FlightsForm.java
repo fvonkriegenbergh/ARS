@@ -1,5 +1,4 @@
 import javax.swing.*;
-import javax.swing.table.TableColumn;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
@@ -8,7 +7,7 @@ import java.awt.event.MouseListener;
 public class FlightsForm extends JFrame implements ActionListener, MouseListener {
 
     private JPanel rootPanel;
-    private JTable flightsTable;
+    private JScrollPane scrollFlights ;
     private JButton bookButton;
     private JLabel flightNumLabel;
     private JLabel departDestLabel;
@@ -20,6 +19,7 @@ public class FlightsForm extends JFrame implements ActionListener, MouseListener
     private JLabel ticketNumLabel;
     private JButton customerSupportBtn;
     private JButton backButton;
+    private JTable flightsTable;
     private User currUser ;
 
     // default constructor
@@ -58,9 +58,9 @@ public class FlightsForm extends JFrame implements ActionListener, MouseListener
         this.backButton.addActionListener(this) ;
 
         // populate table with currUser flights
-        setYourFlights(this.currUser.getFlightData()) ;
 
         // add mouse listener to check which flight is clicked
+        setYourFlights(this.currUser.getFlightData()) ;
         this.flightsTable.addMouseListener(this) ;
 
         this.setContentPane(this.rootPanel) ;
@@ -95,16 +95,18 @@ public class FlightsForm extends JFrame implements ActionListener, MouseListener
 
     public void setYourFlights(String[][] data){
 
-        String[] column=new String[]{"BAGGAGE","TICKET NUM","ARRIVAL TIME", "DEPARTURE TIME", "DEPARTURE", "ARRIVAL"};
+        String[] column=new String[]{"BAGGAGE","TICKET NUM","ARRIVAL TIME", "DEPARTURE TIME", "ARRIVAL", "DEPARTURE"};
         JTable jt=new JTable(data,column);
         jt.setBounds(30,40,200,300) ;
 
         this.flightsTable.setColumnModel(jt.getColumnModel());
         this.flightsTable.setModel(jt.getModel());
+        this.flightsTable.setEnabled(false) ;
+        this.scrollFlights.getViewport().add(flightsTable);
     }
 
     //
-    // override mouslistener methods
+    // override mouselistener methods
     //
     @Override
     public void mouseClicked(MouseEvent e) {
