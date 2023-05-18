@@ -1,3 +1,9 @@
+import com.mongodb.client.MongoClient;
+import com.mongodb.client.MongoClients;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
+import org.bson.Document;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -121,7 +127,21 @@ public class BookingForm extends JFrame implements ActionListener, MouseListener
         System.out.println(this.currUser.getFlierMiles()) ;
         JOptionPane.showMessageDialog(this,"Successfully Booked Flight!") ;
         // send new flight to user's flights in the database
+        MongoClient client = MongoClients.create(
+                "mongodb+srv://Ali068:SliverSliver718718@cluster0.uwuwakt.mongodb.net/?retryWrites=true&w=majority");
+
+        MongoDatabase db = client.getDatabase("AirlineResSystem");
+
+        MongoCollection tTickets = db.getCollection("tTickets");
+
+        MongoCollection tUser = db.getCollection("tUsers");
+
+        Document ticket = new Document("username", currUser.getUserName()).append("ticketNum", newFlight.getTicketNum());
+        tTickets.insertOne(ticket);
+
+
     }
+
 
     // method to display avaiable flights pulled from db
     public void displayAvailableFlights(String[][] data){
